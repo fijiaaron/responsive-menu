@@ -227,3 +227,6 @@ header {
 	position: sticky;
 }
 
+main section {
+	max-width: 1024px;
+}
