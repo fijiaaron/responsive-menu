@@ -84,20 +84,50 @@ section.three-columns ul {
     justify-content: space-between;
     align-items:flex-start;
     padding: 0;
-    margin: 2em;
+    margin: 2rem 0;
 }
 
 section.three-columns ul > li {
     border: 2px solid var(--primary);
+    margin: 0;
     padding: 1em 2em;
     vertical-align: top;
     min-width: 14ch;
-    padding: 2ch;
+    text-align: center;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+section.three-columns * {
+    color: white;
+    font-family: verdana;
+    letter-spacing: 0.05em;
+}
+
+section.three-columns ul > li > a {
+    border: 2px solid var(--primary);
+    margin: 0;
+    padding: 1em 2em;
+    vertical-align: top;
+    min-width: 14ch;
     text-align: center;
 }
+
+
 section.three-columns h3 {
     border: 0;
     font-size: 1.25rem;
     font-weight: 500;
     font-family: Sego UI, Helvetica Neue, courier;
+    
+}
+
+@media screen and (max-width: 699px) {
+    section.three-columns ul {
+        flex-direction: column;
+    }
+
+    section.three-columns ul li {
+        margin: 1rem 0;
+    }
 }
