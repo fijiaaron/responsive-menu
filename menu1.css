@@ -53,11 +53,10 @@ header button {
 }
 
 #menu {
-
 	border-bottom: 2px solid var(--dark);
 	background-color: var(--primary);
 	color: var(--light);
-	text-align: right;
+	text-align: left;
 }
 
 #menu nav {
@@ -66,7 +65,7 @@ header button {
 }
 
 #menu nav ul {
-	list-style-type:none;
+	list-style-type: none;
 	padding: 0 0;
 	margin: 0 0;
 }
@@ -86,7 +85,6 @@ header button {
 	color: var(--medium);
 	text-decoration: underline;
 }
-
 
 header nav {
 	display: inline-block;
