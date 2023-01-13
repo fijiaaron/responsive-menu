@@ -89,13 +89,19 @@ section.three-columns ul {
 
 section.three-columns ul > li {
     border: 2px solid var(--primary);
-    margin: 0;
-    padding: 1em 2em;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    
     vertical-align: top;
-    min-width: 14ch;
+    width: 14em;
+    min-width: 14em !important;
     text-align: center;
     background: var(--primary);
     border-radius: 3px;
+}
+
+section.three-columns ul > li:first-of-type {
+    margin-left: 0;
 }
 
 section.three-columns * {
@@ -106,10 +112,7 @@ section.three-columns * {
 
 section.three-columns ul > li > a {
     border: 2px solid var(--primary);
-    margin: 0;
-    padding: 1em 2em;
     vertical-align: top;
-    min-width: 14ch;
     text-align: center;
 }
 
@@ -122,7 +125,7 @@ section.three-columns h3 {
     
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 800px) {
     section.three-columns ul {
         flex-direction: column;
     }
