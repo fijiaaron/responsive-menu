@@ -1,12 +1,3 @@
-body {
-	--dark: #333;
-	--light: #EEE;
-	--medium: #CCC;
-	--primary: #357;
-    --primary-light: rgba(51, 85, 119, 0.75);
-	--secondary: #DCB; 
-}
-
 .oneshore.logo {
 
     font-family: Verdana, sans-serif;
