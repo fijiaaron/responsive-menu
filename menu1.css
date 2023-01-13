@@ -16,11 +16,6 @@ html, body {
 	display: flex;
 	flex-direction: column;
 
-	--dark: #333;
-	--light: #EEE;
-	--medium: #CCC;
-	--primary: #369;
-	--secondary: #DCB; 
 }
 
 #page-container > * {
@@ -34,6 +29,11 @@ header {
 	justify-content: space-between;
 	background-color: var(--primary);
 	color: var(--light);
+}
+
+header {
+	position: sticky;
+	top:0;
 }
 
 header a {
@@ -62,6 +62,11 @@ header button {
 	font-size: 1.1em;
 }
 
+hr {
+	border: 0;
+	border-top: 0.1rem solid var(--primary);
+	width: 100%;
+}
 
 #menu {
 	display: block;
@@ -186,12 +191,27 @@ footer {
 		display: flex;
 	}
 
-
 	.topics ul {
 		flex-direction: column;
-		line-height: 1.5;
+	}
+
+	.topics ul li {
+		padding: 0.5em 0;
+	}
+
+	.topics ul li a {
+		padding: 0.5em;
+		border-radius: 3px;
+	}
+
+
+	.topics ul li a:hover {
+		background-color: var(--primary);
+		color: var(--light);
+		text-decoration: none;
 	}
 }
+
 
 
 header {

@@ -1,3 +1,12 @@
+body {
+	--dark: #333;
+	--light: #EEE;
+	--medium: #CCC;
+	--primary: #357;
+    --primary-light: rgba(51, 85, 119, 0.75);
+	--secondary: #DCB; 
+}
+
 .oneshore.logo {
 
     font-family: Verdana, sans-serif;
@@ -35,6 +44,9 @@ section.topics ul {
     justify-content: space-between;
 }
 
+section.topics ul li {
+    padding-right: 2ch;
+}
 
 
 main a {
@@ -45,11 +57,12 @@ main a {
 main a:hover {
     text-decoration: underline;
     color: var(--primary);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
 section.hero {
+    width: 100%;
 }
 
 section.hero h2 {
@@ -59,5 +72,41 @@ section.hero h2 {
     font-family: verdana;
     font-size: 48px;
     font-weight: 700;
-    max-width: 24ch;
+    max-width: 20ch;
+    color:#888;
+}
+
+section.hero h2 em {
+    color: rgba(51, 85, 119, 0.85);;
+    font-style: normal;
+}
+
+
+section.three-columns {
+    border: 0;
+}
+
+section.three-columns ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 0;
+    margin: 2em;
+}
+
+section.three-columns ul > li {
+    border: 2px solid var(--primary);
+    padding: 1em 2em;
+    vertical-align: top;
+    min-width: 14ch;
+    padding: 2ch;
+    text-align: center;
+}
+section.three-columns h3 {
+    border: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: Sego UI, Helvetica Neue, courier;
 }
